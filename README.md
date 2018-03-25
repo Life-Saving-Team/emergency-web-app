@@ -1,28 +1,31 @@
-# EmergencyWebApp
+# emergency-web-app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
+## Project Description
 
-## Development server
+This project serves the "resala life saving - emergency" call center team. By enabling streamlined and validated workflows for each role,
+and making it fast and easy to search, create, and update patient and blood donation requests records.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The focus is to create rapid prototypes for the team to use and give feedback, the app structure will be an SPA with a RESTful API.
 
-## Code scaffolding
+## Receptionist Module
+The receptionist is responsible for handling inbound calls from patients or patient relatives having a blood donation request.
+A receptionist can:
+- Input request and patient information in form, and type-ahead searching occurs to retrieve matching patient records.
+- Load the patient fields in form and also patient's active request if any, by selecting a patient link from search results.
+- Revert form state by deselecting patient link.
+- Submit(create) valid blood requests.
+- Update exisiting draft requests and save.
+- Close(terminate) executing and submitted requests.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+This [diagram](https://docs.google.com/presentation/d/10bYMVBsMwSXACLVEKUGS3Msg3Q-GuieuFeWXGuEsXS8/edit?usp=sharing) illustrates the blood request lifecylce from the receptionist role.
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Back-End
+- Node.js
+- Express.js
+- MongoDD + Mongoose
 
-## Running unit tests
+### Front-End
+- Angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
